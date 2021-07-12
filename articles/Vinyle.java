@@ -1,0 +1,17 @@
+package articles;
+
+public class Vinyle extends Article {
+
+	public Vinyle(String nom, String ref,double prix, int poids) {
+		super(nom, ref, prix, poids);
+		this.setFragilite();
+	}
+	public void setFragilite() {
+		this.fragilite="importante";
+	}
+	@Override
+	public String toString() {
+		return "Vinyle : titre= "+ this.getNom()+" Ref= "+ this.getRef()+" Prix= "+ this.getPrix() + " Poids= "+ this.getPoids()+"g";
+	}
+	
+}
